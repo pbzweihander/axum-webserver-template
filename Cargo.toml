@@ -4,10 +4,17 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-anyhow = "1"
 axum = "0.8"
+color-eyre = "0.6"
 envy = "0.4"
+eyre = "0.6"
 serde = { version = "1", features = ["derive"] }
-tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "signal"] }
+tokio = { version = "1", features = [
+    "macros",
+    "rt-multi-thread",
+    "net",
+    "signal",
+] }
 tracing = "0.1"
+tracing-error = "0.2"
 tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
